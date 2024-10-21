@@ -1,0 +1,150 @@
+/* General Styles */
+:root {
+    --background-color: #f9f9f9; /* Light theme background */
+    --text-color: #333; /* Light theme text */
+     /* Header background color */
+    --button-background: #4a90e2; /* Button background color */
+    --button-hover-background: #357ab8; /* Button hover color */
+    --section-background: #fff; /* Section background color */
+     /* Footer background color */
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --background-color: #8c1919; /* Dark theme background */
+    --text-color: #f9f9f9; /* Dark theme text */
+    --header-background: #3a3a3a; /* Dark theme header */
+    --button-background: #5a5a5a; /* Dark theme button */
+    --button-hover-background: #6a6a6a; /* Dark theme button hover */
+    --section-background: #2c2c2c; /* Dark theme section */
+    --footer-background: #3a3a3a; /* Dark theme footer */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--header-background);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+.booking-date{
+    background-color: #ccc;
+}
+/* Hall Details Section */
+#details {
+    background-color: var(--section-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(202, 9, 9, 0.1);
+    margin-bottom: 20px;
+}
+
+.caterer-details {
+    text-align: center;
+}
+
+.caterer-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Form Styles */
+.section {
+    background-color: var(--section-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--button-background);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+}
+
+/* Payment Section */
+#payment-section label {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+/* Confirmation Section */
+#confirmation-section {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--footer-background);
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .App {
+        padding: 10px;
+    }
+    
+    #details {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .section {
+        margin: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"] {
+        font-size: 14px;
+    }
+}
